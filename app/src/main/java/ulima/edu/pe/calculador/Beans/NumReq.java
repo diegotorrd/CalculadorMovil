@@ -7,9 +7,9 @@ package ulima.edu.pe.calculador.Beans;
 public class NumReq {
     private  Float num1,num2;
 
-    public NumReq(Float num2, Float num1) {
-        this.num2 = num2;
+    public NumReq(Float num1, Float num2) {
         this.num1 = num1;
+        this.num2 = num2;
     }
 
     public Float getNum1() {

@@ -3,6 +3,7 @@ package ulima.edu.pe.calculador.Remote;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 import ulima.edu.pe.calculador.Beans.NumReq;
 
@@ -12,16 +13,16 @@ import ulima.edu.pe.calculador.Beans.NumReq;
 
 public interface CalculadorRemote {
 
-    @GET("suma")
+    @POST("suma")
     Call<Float> suma(@Body NumReq req);
 
-    @GET("resta")
+    @POST("resta")
     Call<Float> diferencia(@Body NumReq req );
 
-    @GET("multi")
+    @POST("multi")
     Call<Float> multiplicacion(@Body NumReq req );
 
-    @GET("divi")
+    @POST("divi")
     Call<Float> division(@Body NumReq req );
 
 
